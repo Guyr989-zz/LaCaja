@@ -1,0 +1,150 @@
+/*Reset*/
+*                { padding: 0; margin: 0; border: none; color:#020202; font-size:16px; font-family: 'Roboto', sans-serif; }
+body          { background: #f0f0f0; }
+a                { cursor:pointer;  text-decoration:none; color: #020202; }
+h1,
+li         { text-transform:uppercase; }
+button:focus       { outline: none; }
+
+/*Fixes Float problems*/
+.clear_fix   { content: ""; clear: both; overflow: hidden; }
+
+/*wrapper*/
+.container  { max-width:1920px;  margin: 0 auto; }
+.wrapper    { max-width: 1200px; margin: 0 auto; }
+/*sprite upload*/
+.contrast,.home_img ,.porfile,
+.chat,.phone,.contactanos,.email,
+.location,.right_arrow,.mail,.facebook,
+.tweeter,.linkdin,.youtube,.instagram,#up_arrow    { background: url("../sprite/sprite.png") 0 0 no-repeat; }
+
+/*logo*/
+.logo              { display: inline-block;}
+.logo img       { width:112px; height: 98px; }
+
+header            { background: repeating-linear-gradient(-45deg, #d5d5d5 -25px,#fff 0px,#f9f9f9 80%); }
+
+/*utilities nav bar*/
+.top_nav                  { margin-right: 100px; float: right; display:inline-block; }
+.top_nav a ,
+ .AAA                      {  border-left:2px solid #ccc; float: left; }
+.contacto,
+ .contrast,
+ .AAA                      { padding:5px 20px; margin: 0 2px; display: inline-block; }
+.contacto                   { font-weight: bold; }
+.contrast                    { width:16px; height:20px; background-position: 17px -295px; }
+.AAA a                     { border:none; font-size: 15px;}
+.AAA .A_medium    { font-size: 18px; margin:0 5px; line-height: 17px; }
+.AAA .A_large         { font-size: 21px; line-height: 14px; }
+.top_nav:last-child    { border-right: 2px solid #ccc; }
+
+/*nav bar*/
+nav                { margin-right: 100px; line-height: 25px;  text-align: right; text-transform: uppercase; }
+nav a             { margin-left:10px; padding: 5px 5px 0 5px; border-bottom:3px solid #255394; }
+nav a:hover   { border-color: #d73c42; }
+nav a:focus   { background: #d73c42; border-color: #d73c42; }
+
+
+/*site's path*/
+.home_img     { width:25px; height:25px;  margin:10px 0 10px 5%; float:left; background-position: right -200px; }
+
+/*background image*/
+.background_img      { background:  url("../Img/trabajo-img.png") no-repeat;  background-size: cover; }
+.background_img h1 { font-size: 50px; color: #fff; text-transform: capitalize; display:inline-block; line-height: 500px; }
+
+
+/*side bar nav*/
+.side_bar              { width:230px; margin-top:20px; position: absolute; top: 200px; right: 50px; background: #fff;  border:1px solid #c0c0bc; border-radius: 5px; -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75); opacity: 0.7; }
+.side_bar h2         { margin: 10px; color:#d9454b; text-transform:uppercase; }
+.side_bar div a     { font-size: 18px;  text-transform: capitalize; }
+.side_bar .porfile { width:100px; height: 100px; margin: 20px auto; background-position:0 -700px; border: none; }
+.chat                    { background-position:-355px -285px;}
+.phone                 { background-position:15px -385px; }
+.contactanos        { background-position: -355px -385px; }
+.email                  { background-position:15px -480px; }
+.location              { padding-bottom: 40px; background-position: -360px -480px; }
+.side_bar .right_arrow ,
+.float_box .right_arrow       { width:5px; height:5px; margin:0; display: inline-block; position:relative; top:5px; border:none; background-position:right -600px; }
+.chat,
+.phone,
+.contactanos,
+.email,
+.location           { padding: 20px 0 20px 65px;  border-top: 1px solid #ededec; }
+.map_link         { text-align: center; }
+.map_link div   {  width: 70%; margin:20px auto 0; padding: 5px;  position: relative; bottom: 20px; text-transform: uppercase; color:#d73c42; font-weight: bold; border:2px solid #d73c42; border-radius: 4px; }
+
+#chatBox           { display:none; width:200px; height: 200px; text-align: left;position:absolute; top:250px ;left:800px; background:#fff; opacity:0.75; border:1px solid #ccc;  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                                -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+                                box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);  text-align:center; line-height:200px; border-radius: 5px; }
+
+#chatBox  p   {display: inline-block; }
+#chatBox span   { font-size: 20px; }
+/*2th Section*/
+.trabajo_section            { text-align: center; padding-bottom: 30px; margin-bottom: 30px; }
+.trabajo_section  h1      { padding: 60px 0 10px ; margin-bottom: 40px; font-size: 40px; color: #d73c42; border-bottom: 1px solid #88898b; display: inline-block; }
+.trabajo_section p         { max-width:540px; margin: 0 auto 40px; color:#46648c; font-size: 20px; }
+.trabajo_section div      { padding-top:200px;  display: inline-block; }
+.trabajo_section  .independent                 { background: url("../Img/trabajo-independiente-box-img.png") no-repeat; margin-right: 10px;}
+.trabajo_section  .professional                 { background: url("../Img/plan-profesionales-box-img.png") no-repeat; }
+.independent .independent_inner ,
+.professional  .independent_inner   { width:370px; height:180px; padding:10px; background-color:#fff; box-sizing: border-box; text-align:center; opacity:0.65; }
+.independent_inner h1                     { margin-bottom:10px; padding: 15px 0 0 0; font-size: 20px; color:#000; border: none; }
+.independent_inner  p                      { margin-bottom: 10px; font-size:17px; color: #000; text-transform: capitalize;}
+.trabajo_section .float_box              { height: 10px; padding:5px 10px 12px 10px; border:2px solid #d73c42; }
+.trabajo_section .float_box p            { margin: 0; color:#d73c42; display: inline-block; text-transform:uppercase; }
+.float_box .right_arrow                     { padding: 5px;}
+.border                                               { max-width:1920px; margin:0 auto 40px; border:1px solid #d73c42; }
+
+/*3th section*/
+.connection       { padding:0 20px 30px; margin-bottom: 30px; text-align:center; border-bottom:1px solid #aab2b6; }
+.ways_to_contact,
+.google_maps      { display: inline-block; }
+
+.ways_to_contact,.map          { width:50%; text-align: left;line-height: 50px; float: left;}
+.ways_to_contact h1         { margin-bottom:20px; font-size:23px; color:#d73c42;}
+.agentfooter_img               { width:200px; height:200px; float:left; background: url("../Img/agentfooter-img.png");}
+.contact_us                        { display: inline-block; margin-left: 20px; }
+.contact_us div                  { height: 50px;  padding:15px 10px 0 70px; border-bottom:1px solid #959fa4; }
+ul                                       { list-style:none; }
+li:first-child                       { font-size:15px; color:#bec4c8; }
+li,
+ li:last-child                        { text-align: left; color:#798187; }
+.chat li:first-child::before  { content: "• "; color:#9dbde8; }
+.mail                                  { background-position:12px -586px; }
+#googleMap                        { height:230px; }
+.map .location                     { height:15px; display: inline-block; padding:5px 0 15px 25px;  background-position: right -500px;}
+.map p                                 { display: inline-block; vertical-align: text-bottom; }
+/*social networks*/
+.socials                                 { width:300px; height:40px; margin-bottom: 20px; }
+.socials a                              { width:40px; height:35px; margin-left: 5px; display: inline-block;}
+.socials a:first-child             { margin: 0; }
+.tweeter                                { background-position: 0 -100px; }
+.linkdin                                { background-position: 0 -200px; }
+.youtube                               { background-position: -365px 0px; }
+.instagram                            { background-position: right -100px; }
+
+
+/*footer*/
+footer                   { padding:40px; background: #838f96; }
+footer p                { max-width:500px; margin:0 auto 30px; text-align: center; color: #fff; }
+.footer_logo         { text-align: center;}
+.footer_logo div   { width:57px; height:57px; margin: 0 auto;  background:url("../Logo/la-caja-footer-logo.png") no-repeat; }
+.footer_logo p      { margin-top: 5px; font-size:10px; text-transform: uppercase; }
+#up_arrow            { display: none; width:67px; height:67px; position: fixed; right: 50px; background-position: right -700px; z-index: 3;}
+
+
+
+@media screen and (min-width:1500px) {
+.side_bar         { right: 235px; }
+.map p             { font-size: 20px; }
+}
+
+@media screen and (max-width:1300px) {
+.background_img          { padding:0 30px; }
+.background_img h1     { font-size:40px; }
+.socials                          { padding-left: 30px; }
+nav a                             { font-size:12px; }
+footer p                         { font-size: 12px; }
+}

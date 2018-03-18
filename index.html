@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>La Caja</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="sprite/sprite.png">
+  <script src="js/script.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="clear_fix container">
+    <!-- logo -->
+    <div class="logo"><img src="logo/la-caja-logo.png" alt="logo"></div>
+    <!-- top utilities bar -->
+    <div class="top_nav clear_fix">
+      <a class="contacto">contacto</a>
+      <a class="contrast"></a>
+      <div class="AAA">
+        <a href="#" class="A_small">A</a>
+        <a href="#" class="A_medium">A</a>
+        <a href="#" class="A_large">A</a>
+      </div>
+    </div>
+    <!-- main nav bar -->
+    <nav>
+      <a href="#">nuestros seguros</a>
+      <a href="#">atención al cliente</a>
+      <a href="#">siniestros</a>
+      <a href="#">quienes somos</a>
+      <a href="#">eventos de la vida</a>
+      <a href="#">rating</a>
+    </nav>
+  </header>
+  <!-- site's path -->
+  <div class="path clear_fix container">
+    <a href="#" class="home_img"></a>
+    <a href="#" class="mid_path"></a>
+    <a href="#" class="path_end"></a>
+  </div>
+  <!--1th Section -->
+    <button id="up_arrow" onclick="go_up()"></button>
+  <div class="background_img clear_fix container">
+    <div class="wrapper">
+      <h1>Protegido para cualquier actividad</h1>
+      <!-- Side Bar -->
+      <div class="side_bar">
+        <div class="porfile"></div>
+        <h2>bienvenidos a la caja</h2>
+        <div class="chat" onclick="open_chat()"><a>chat</a></div>
+        <div class="phone"><a href="tel:0800000000">0810-555-2252</a></div>
+        <div class="contactanos"><a>contactanos</a></div>
+        <div class="email"><a>E-mail</a></div>
+        <div class="location"><a>Fitz Roy 957 vila crespo</a></div>
+        <a href="#" class="map_link">
+          <div>
+            ver en al mapa
+            <div class="right_arrow"></div>
+          </div>
+        </a>
+      </div>
+      <div id="chatBox"><span>Chat me  </span><p id="count_down">10</p></div>
+    </div>
+  </div>
+  <!--2th Section-->
+
+  <div class="trabajo_section clear_fix wrapper">
+    <h1>trabajo</h1>
+    <p>Uh seguro pensado para lo que siempre tenés en mente: el bienestar de tu familia la mejor protección en todo momento y en cualquier lugar del mundo.</p>
+    <div class="independent">
+      <div class="independent_inner">
+        <h1>plan trabajo independiente</h1>
+        <p>en todo momento, lo más importante es familia y tu trabajo. nosotros te brindamos las mejores cobertu...</p>
+        <div class="float_box">
+          <p>ver más</p>
+          <div class="right_arrow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="professional">
+      <div class="independent_inner">
+        <h1>plan profesionales</h1>
+        <p>Sos profesional. Tenés un buen trabajo.Querés la mejor cobertura. Conocé las distintas opciones de...</p>
+        <div class="float_box">
+          <p>ver más</p>
+          <div class="right_arrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="border"></div>
+
+  <!-- 3th Section -->
+  <div class="connection clear_fix wrapper">
+    <div class="ways_to_contact">
+      <h1>la caja sucursal villa crespo</h1>
+      <div class="agentfooter_img"></div>
+      <div class="contact_us clear_fix">
+        <div class="phone">
+          <ul>
+            <li>villa crespo
+              <li/>
+              <li> 0810-555-2252</li>
+          </ul>
+        </div>
+        <div class="chat">
+          <ul>
+            <li>disponible</li>
+            <li>chat en vivo</li>
+          </ul>
+        </div>
+        <div class="mail">
+          <ul>
+            <li>escribinos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="location"></div>
+      <p>957 Fitz Roy, Villa Crespo, Capital Federal, Argentina</p>
+      <div id="googleMap"></div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="socials">
+      <a href="#" class="facebook"></a>
+      <a href="#" class="tweeter"></a>
+      <a href="#" class="linkdin"></a>
+      <a href="#" class="youtube"></a>
+      <a href="#" class="instagram"></a>
+    </div>
+  </div>
+  <footer>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+
+    <div class="footer_logo">
+      <div></div>
+      <P>parte del grupo generali</P>
+    </div>
+  </footer>
+
+  <script>
+    function myMap() {
+      var mapProp = {
+        center: new google.maps.LatLng(-34.589846, -58.443777),
+        zoom: 15,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVcH4DMf_relTq_WRmM5_uYOmih9n57pw&callback=myMap"></script>
+</body>
+
+</html>
